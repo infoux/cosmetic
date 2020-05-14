@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <title>Default</title>
+    <link href="source/css/style.css" rel="stylesheet">
+    <!-- javaScript  -->
+    <script src="source/js/jquery-1.11.3.min.js"></script>
+    <script src="source/js/common.js"></script>
+</head>
+
+<body>
+
+    <!-- S:Content -->
+    <div id="content" class="order">
+
+
+        <article class="detail">
+
+            <details>
+                <summary>
+                  <h2>주문상품 <i>세럼 / 1개</i></h2>
+                </summary>
+
+                <div class="content">
+                
+                    <div class="img">
+                        <img src="source/images/tmp.png">
+                    </div>
+                    <h3>세럼</h3>
+
+                    <div class="count">
+                        <button class="minus">빼기1</button>
+                        <span><strong>1</strong>개</span>
+                        <button class="plus">더하기1</button>
+                    </div>
+                </div>
+            </details>
+
+            <details open>
+                <summary>
+                  <h2>주문자 정보</h2>
+                </summary>
+
+                <div class="content">
+                    <p class="name">김진아</p>
+                    <p>010-1234-5678</p>
+                    <p>info@gmail.com</p>
+                </div>
+            </details>
+
+            <details open>
+                <summary>
+                  <h2>배송지</h2>
+                </summary>
+
+                <div class="content">
+
+
+
+                    <div class="check-tab no3">
+                        <input id="default" name="address-check" type="radio" checked>
+                        <label for="default">기본배송지</label>
+                        <input id="new" name="address-check" type="radio">
+                        <label for="new">신규배송지</label>
+                        <input id="list" name="address-check" type="radio">
+                        <label for="list">배송지목록</label>
+                    </div>
+
+                    <div class="tabcontent notext ">
+                        <p>배송지 정보가 없습니다.</p>
+                        <p>여기를 눌러 배송지 정보를 입력해주세요.</p>
+                    </div>
+
+                    <div class="tabcontent default">
+                        <p class="name">김진아</p>
+                        <p>(63208)제주특별자치도 제주시 중앙로 217</p>
+                        <p>807호 인포마인드</p>
+                    </div>
+
+                    <div class="tabcontent new">
+                        <input type="text" placeholder="받는사람">
+                        <input type="text" placeholder="전화번호">
+                        <input type="text" class="address">
+                        <button class="search-address">주소검색</button>
+                        <input type="text" placeholder="나머지주소">
+                    </div>
+
+                    <div class="tabcontent list show">
+                        <ul>
+                            <li>
+                                <p class="name">김진아</p>
+                                <p>(63208)제주특별자치도 제주시 중앙로 217</p>
+                                <p>807호 인포마인드</p>
+
+                                <input id="address01" name="address-list" type="radio">
+                                <label for="address01">선택</label>
+                            </li>
+                            <li>
+                                <p class="name">김진아</p>
+                                <p>(63208)제주특별자치도 제주시 중앙로 217</p>
+                                <p>807호 인포마인드</p>
+
+                                <input id="address02" name="address-list" type="radio">
+                                <label for="address02">선택</label>
+                            </li>
+                            <li>
+                                <p class="name">김진아</p>
+                                <p>(63208)제주특별자치도 제주시 중앙로 217</p>
+                                <p>807호 인포마인드</p>
+
+                                <input id="address03" name="address-list" type="radio">
+                                <label for="address03">선택</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+
+
+            <details open>
+                <summary>
+                  <h2>포인트 사용</h2>
+                </summary>
+
+                <div class="content">
+
+                    <div class="point">
+                        <label for="point">사용 포인트</label>
+                        <div class="outline">
+                            <input id="point" type="text" value="400">
+                            <span>p</span>
+                        </div>
+                        <button>전액사용</button>
+
+                        <i>사용가능포인트 980P</i>
+                    </div>
+
+                </div>
+            </details>
+
+
+
+            <details open>
+                <summary>
+                  <h2>결제방법</h2>
+                </summary>
+
+                <div class="content">
+
+
+
+                    <div class="check-tab no2">
+                        <input id="card" name="credit-check" type="radio" checked>
+                        <label for="card">신용카드</label>
+                        <input id="banking" name="credit-check" type="radio">
+                        <label for="banking">무통장입금</label>
+                    </div>
+
+
+                    <div class="tabcontent card show">
+                        <div class="outline">
+                            <select>
+                                <option>카드를 선택하세요</option>
+                            </select>
+                        </div>
+                        <div class="outline">
+                            <select>
+                                <option>일시불</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="tabcontent banking">
+                    </div>
+                </div>
+            </details>
+
+
+            <details>
+                <summary>
+                  <h2>최종결제금액 <i class="total">24,800원</i></h2>
+                </summary>
+
+                <div class="content">
+                
+                    <ul class="calc">
+                        <li class="price">상품가 <strong>25,400</strong></li>
+                        <li class="point">포인트사용 <strong>-600</strong></li>
+                        <li class="total">최종결제금액 <strong>24,800</strong></li>
+                    </ul>
+                </div>
+            </details>
+
+
+        </article>
+
+        <button class="ok">
+            결제하기
+        </button>
+    </div>
+    <!-- E:Content -->
+
+
+    <!-- S:테스트용 임시 코드 -->
+    <script>
+        $(document).ready(function() {
+
+            $("div.count button.plus").on("click", function(e){
+                e.preventDefault();
+                var stat = $('div.count span strong').text();
+                var num = parseInt(stat,10);
+                num++;
+                $('div.count span strong').text(num);
+            });
+
+
+            $("div.count button.minus").on("click", function(e){
+                e.preventDefault();
+                var stat = $('div.count span strong').text();
+                var num = parseInt(stat,10);
+                num--;
+
+                $('div.count span strong').text(num);
+            });
+
+            $("div.check-tab input[type='radio']").click(function(){
+                var txt = $(this).attr("id")
+                $(this).parent().parent().find(".tabcontent").removeClass("show");
+                $("div.tabcontent."+ txt).addClass("show");
+            });
+
+            $("div.tabcontent.notext").click(function(){
+                var txt = $(this).attr("id")
+                $(this).parent().parent().find(".tabcontent").removeClass("show");
+                $("div.tabcontent.new").addClass("show");
+            });
+
+
+        });
+
+    </script>
+    <!-- E:테스트용 임시 코드 -->
+</body>
+
+</html>

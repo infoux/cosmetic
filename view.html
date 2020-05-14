@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <title>Default</title>
+    <link href="source/css/style.css" rel="stylesheet">
+    <!-- javaScript  -->
+    <script src="source/js/jquery-1.11.3.min.js"></script>
+    <script src="source/js/common.js"></script>
+</head>
+
+<body>
+
+    <!-- S:Content -->
+    <div id="content" class="view">
+        <fieldset>
+            <legend>
+                제형선택
+            </legend>
+            <select>
+                <option>수분크림</option>
+                <option>세럼</option>
+            </select>
+        </fieldset>
+
+        <article class="detail">
+            <div class="img">
+                <img src="source/images/tmp.png">
+            </div>
+            <h2><small>제품명</small>왕벚꽃 수분크림</h2>
+            <div class="tags">
+                <span>수분충전</span>
+                <span>야옹</span>
+            </div>
+
+            <dl>
+                <dt>
+                    처방정보
+                </dt>
+                <dd>
+                    3번_베이스(88%), 보습(2%), 민감(2%)
+                </dd>
+                <dt>
+                    성분
+                </dt>
+                <dd>
+                    왕벚나무잎추출물(120 ppm), 티타늄디옥사이드 (CI
+                    77891), 폴리솔베이트80, 나이아신아마이드, 헥산다
+                    이올, 다이아이소스테아릴말레이트, 정제수, 글리세린
+                </dd>
+            </dl>
+        </article>
+
+        <button class="order">
+            주문하기
+        </button>
+    </div>
+    <!-- E:Content -->
+
+
+    <!-- S:Popup -->
+    <div class="popup">
+        <div class="box">
+            <p class="text">
+                <span>맞춤제작상품의 특성상 제작이 시작된 후나 발송된 후에는 제품의 하자를 제외한 나머지 사유로의 환불/교환이 어렵습니다.</span>
+                <span>이에 유의하시고 구매를 계속 진행하시려면 확인버튼을 눌러주세요</span>
+            </p>
+            <div class="btn-set">
+                <button>취소</button>
+                <button class="main">확인</button>
+            </div>
+        </div>
+    </div>
+    <!-- E:Popup -->
+
+
+    <!-- S:테스트용 임시 코드 -->
+    <script>
+        $(document).ready(function() {
+
+            $("button.order").on("click", function(){
+                $("div.popup").addClass("alert");
+                $('html, body').addClass('hidden');
+                $('body').addClass('scrollDisable').on('scroll touchmove mousewheel', function(e){
+                    e.preventDefault();
+                });
+                
+            });
+
+            $("div.btn-set button").on("click", function(){
+                $("div.popup").removeClass("alert");
+                $('html, body').removeClass('hidden');
+                $('body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
+            });
+
+        });
+    </script>
+    <!-- E:테스트용 임시 코드 -->
+</body>
+
+</html>
