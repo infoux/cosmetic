@@ -16,7 +16,8 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow:$('.next'),
-        prevArrow:$('.prev')
+        prevArrow:$('.prev'),
+        accessibility: false
         
     });
     
