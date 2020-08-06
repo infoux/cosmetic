@@ -44,5 +44,9 @@ $(document).ready(function() {
 
       });
 
+      $("article.counter .go-first").on("click", function(){
+        surveySlider.slick("slickGoTo", 0);
+      })
+
 });
 
