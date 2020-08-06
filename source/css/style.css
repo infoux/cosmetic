@@ -1403,6 +1403,8 @@ body div#content.survey article.counter div.progress p {
   font-size: 0;
   width: 0px;
   background: #E192A2;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 body div#content.survey article.counter div.progress p.p10 {
