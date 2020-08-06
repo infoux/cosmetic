@@ -4,7 +4,9 @@ $(document).ready(function() {
 
 
 
-
+    $('section.question .slider').on('init', function(event, slick){
+        $('.counter .progress p').attr("style", "width:"+ (1/slick.slideCount)*100 +"%");
+    });
     
     var surveySlider = $('section.question .slider').slick({
         autoplay:false,
@@ -17,9 +19,8 @@ $(document).ready(function() {
         prevArrow:$('.prev')
         
     });
-
+    
     var slideCalc;
-    var slideCalcResult;
 
     surveySlider.on('afterChange', function(event, slick, currentSlide) {
         $('.next').removeClass("hide");
@@ -37,12 +38,10 @@ $(document).ready(function() {
           $('.finish').removeClass("hide");
         }
 
-        slideCalc = (currentSlide / slick.slideCount)*100;
-        slideCalcResult = Math.round(slideCalc / 10);
+        slideCalc = ((currentSlide + 1) / slick.slideCount)*100;
         
-        $('.counter .progress p').attr("class", "p"+ slideCalcResult + "0");
+        $('.counter .progress p').attr("style", "width:"+ slideCalc+"%");
 
-        console.log(slideCalcResult);
       });
 
 });
