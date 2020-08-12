@@ -822,9 +822,18 @@ body div#content.order article.detail details div.content div.img img {
 
 body div#content.order article.detail details div.content h3 {
   display: inline-block;
-  line-height: 45px;
   font-size: 17px;
   margin: 0 0 0 56px;
+  padding: 0;
+}
+
+body div#content.order article.detail details div.content h3 small {
+  font-size: inherit;
+  color: #A6C9BA;
+}
+
+body div#content.order article.detail details div.content p.option {
+  margin: 0 100px 0 56px;
   padding: 0;
 }
 
@@ -1164,9 +1173,12 @@ body div#content.order article.detail details[open]::after {
 }
 
 body div#content.order button.ok {
+  position: fixed;
+  bottom: 0;
   display: block;
   width: 100%;
   height: 55px;
+  padding: 0 20px 0 0;
   border: none;
   background: #E192A2;
   color: #fff;
@@ -1181,7 +1193,7 @@ body div#content.order button.ok::before, body div#content.order button.ok::afte
   width: 10px;
   height: 2px;
   left: 50%;
-  margin: 0 0 0 60px;
+  margin: 0 0 0 90px;
   padding: 0;
   background: #fff;
 }
