@@ -1694,6 +1694,112 @@ body div#content.survey section.result button.view {
   background: #202020;
 }
 
+body div#content.customer {
+  background: #fff;
+}
+
+body div#content.customer > div {
+  word-break: keep-all;
+  margin: 0;
+  padding: 18px;
+  border-bottom: 1px solid #eee;
+}
+
+body div#content.customer > div h3 {
+  font-size: 17px;
+  color: #333;
+  font-weight: 500;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+body div#content.customer > div h4 {
+  font-size: 15px;
+  color: #333;
+  font-weight: 400;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+body div#content.customer > div p {
+  margin: 0 0 12px;
+  padding: 0;
+  font-size: 15px;
+  color: #999;
+}
+
+body div#content.customer > div ul.star {
+  list-style: none;
+  padding: 0;
+}
+
+body div#content.customer > div ul.star li {
+  font-size: 15px;
+  color: #999;
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 12px;
+}
+
+body div#content.customer > div ul.star li::before {
+  content: "*";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+body div#content.customer > div ul.num {
+  list-style: none;
+  padding: 0;
+}
+
+body div#content.customer > div ul.num li {
+  font-size: 15px;
+  color: #999;
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 24px;
+}
+
+body div#content.customer > div ul.num li span {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+body div#content.customer > div ul.num li ul {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+body div#content.customer > div table {
+  width: 100%;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+body div#content.customer > div table tr td,
+body div#content.customer > div table tr th {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-size: 15px;
+  text-align: center;
+  color: #999;
+  margin: 0;
+  padding: 10px 0;
+}
+
+body div#content.customer > div table tr th {
+  color: #333;
+  background: #eee;
+  width: 50%;
+}
+
 body div.popup {
   display: none;
   -webkit-box-align: center;
