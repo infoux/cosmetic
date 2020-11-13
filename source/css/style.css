@@ -480,6 +480,10 @@ body {
   background: #F2F2F2;
 }
 
+body.data {
+  background: #fff;
+}
+
 body div#content {
   /* SUB */
 }
@@ -1798,6 +1802,117 @@ body div#content.customer > div table tr th {
   color: #333;
   background: #eee;
   width: 50%;
+}
+
+body div#content.data {
+  margin: 25px;
+  padding: 0;
+}
+
+body div#content.data h2 {
+  font-size: 21px;
+}
+
+body div#content.data h2 small {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  color: #8FAEA1;
+}
+
+body div#content.data h3 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #555;
+}
+
+body div#content.data h3::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  width: 8px;
+  height: 8px;
+  background: #555;
+  margin-right: 8px;
+}
+
+body div#content.data h3 span {
+  position: relative;
+  display: inline-block;
+  padding: 0 6px;
+  font-size: 19px;
+  color: #8FAEA1;
+}
+
+body div#content.data h3 span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #aaa;
+}
+
+body div#content.data ul {
+  position: relative;
+  margin: 0 0 30px;
+  padding: 20px 20px 20px 180px;
+  border: 1px solid #DDDDDD;
+  list-style: none;
+  min-height: 160px;
+}
+
+body div#content.data ul li {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+body div#content.data ul li:first-child {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  text-align: center;
+  width: 150px;
+  font-size: 17px;
+  font-weight: 600;
+  border-right: 1px solid #DDDDDD;
+}
+
+body div#content.data ul li:first-child::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 82px;
+  height: 82px;
+  margin-bottom: 10px;
+}
+
+body div#content.data ul li:first-child.type01::before {
+  background: url("../images/type01.svg") no-repeat center/100% auto;
+}
+
+body div#content.data ul li:first-child.type02::before {
+  background: url("../images/type02.svg") no-repeat center/100% auto;
+}
+
+body div#content.data ul li:first-child.type03::before {
+  background: url("../images/type03.svg") no-repeat center/100% auto;
+}
+
+body div#content.data ul li:first-child.type04::before {
+  background: url("../images/type04.svg") no-repeat center/100% auto;
+}
+
+body div#content.data ul li:first-child.type05::before {
+  background: url("../images/type05.svg") no-repeat center/100% auto;
+}
+
+body div#content.data div.chart {
+  min-height: 140px;
+  background: #eee;
 }
 
 body div.popup {
