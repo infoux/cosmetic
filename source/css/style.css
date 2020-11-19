@@ -1805,24 +1805,24 @@ body div#content.customer > div table tr th {
 }
 
 body div#content.data {
-  margin: 50px;
   padding: 0;
+  margin: 6vw;
 }
 
 body div#content.data h2 {
-  font-size: 42px;
+  font-size: 5.4vw;
 }
 
 body div#content.data h2 small {
   display: block;
-  font-size: 30px;
+  font-size: 4.4vw;
   font-weight: 400;
   color: #8FAEA1;
   word-break: keep-all;
 }
 
 body div#content.data h3 {
-  font-size: 32px;
+  font-size: 4.6vw;
   font-weight: 400;
   color: #555;
 }
@@ -1831,17 +1831,17 @@ body div#content.data h3::before {
   content: "";
   display: inline-block;
   position: relative;
-  top: -6px;
-  width: 16px;
-  height: 16px;
+  top: -0.8vw;
+  width: 2.4vw;
+  height: 2.4vw;
   background: #555;
-  margin-right: 16px;
+  margin-right: 2.4vw;
 }
 
 body div#content.data h3 span {
   position: relative;
   display: inline-block;
-  padding: 0 12px;
+  padding: 0 2vw;
   font-size: 38px;
   color: #8FAEA1;
 }
@@ -1859,25 +1859,25 @@ body div#content.data h3 span::after {
 
 body div#content.data ul {
   position: relative;
-  margin: 0 0 30px;
-  padding: 40px 40px 40px 360px;
+  margin: 0 0 4vw;
+  padding: 4.6vw 4.6vw 4.6vw 46vw;
   border: 1px solid #DDDDDD;
   list-style: none;
-  min-height: 320px;
+  min-height: 40vw;
 }
 
 body div#content.data ul li {
-  font-size: 30px;
-  margin-bottom: 8px;
+  font-size: 4.2vw;
+  margin-bottom: 1.4vw;
 }
 
 body div#content.data ul li:first-child {
   position: absolute;
   left: 0;
-  top: 40px;
+  top: 5.6vw;
   text-align: center;
-  width: 300px;
-  font-size: 34px;
+  width: 40vw;
+  font-size: 4.6vw;
   font-weight: 600;
   border-right: 1px solid #DDDDDD;
 }
@@ -1886,9 +1886,9 @@ body div#content.data ul li:first-child::before {
   content: "";
   display: block;
   margin: 0 auto;
-  width: 164px;
-  height: 164px;
-  margin-bottom: 20px;
+  width: 21vw;
+  height: 21vw;
+  margin-bottom: 2vw;
 }
 
 body div#content.data ul li:first-child.type01::before {
@@ -1912,7 +1912,7 @@ body div#content.data ul li:first-child.type05::before {
 }
 
 body div#content.data div.chart {
-  min-height: 140px;
+  min-height: 40vw;
   background: #eee;
 }
 
